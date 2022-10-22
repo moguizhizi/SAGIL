@@ -1,12 +1,12 @@
-# Topology-Aware Correlations Between Relations for Inductive Link Prediction in Knowledge Graphs
+# Substructure-Aware Subgraph Reasoning for Inductive Relation Prediction
 
-This repository contains the code and the datasets of **Topology-Aware Correlations Between Relations for Inductive Link Prediction in Knowledge Graphs**. Jiajun Chen, Huarui He, Feng Wu, Jie Wang. AAAI 2021. [[arXiv](https://arxiv.org/pdf/2103.03642.pdf)]
+This repository contains the code and the datasets of **Substructure-Aware Subgraph Reasoning for Inductive Relation Prediction**. Kai Sun, HuaJie Jiang, YongLi Hu, BaoCai Yin
 
 ## Dependencies
 The code is based on Python 3.7. You can use the following command to create a environment and enter it.
 ```shell script
-conda create --name TACT-env python=3.7
-source activate TACT-env
+conda create --name SASP_ENV python=3.7
+source activate SASP_ENV
 ```
 All the required packages can be installed by running 
 ```shell script
