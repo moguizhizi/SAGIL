@@ -28,10 +28,10 @@ To reproduce the results, run the following commands.
 ```shell script
 #################################### AUC-PR ####################################
 cd code/AUC-PR
-bash run_five.sh WN18RR_v1 8 1 2 0.01 0.01 demo 10 0
-bash run_five.sh WN18RR_v2 8 1 2 0.01 0.01 demo 10 0
-bash run_five.sh WN18RR_v3 8 1 2 0.01 0.01 demo 10 0
-bash run_five.sh WN18RR_v4 8 1 2 0.01 0.01 demo 10 0
+bash run_five.sh WN18RR_v1 8 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 3 relu relu 0 16 0 32 sum
+bash run_five.sh WN18RR_v2 8 1 2 0.01 0.01 demo 10 0 True True 1 2 True complete_graph_chosen_k 3 relu relu 0 16 0 32 sum
+bash run_five.sh WN18RR_v3 8 1 2 0.01 0.01 demo 10 0 True True 1 0 True complete_graph_chosen_k 3 relu relu 0 32 0 32 sum
+bash run_five.sh WN18RR_v4 8 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 3 relu relu 0 16 0 32 sum
 
 bash run_five.sh fb237_v1 16 1 2 0.01 0.01 demo 10 0
 bash run_five.sh fb237_v2 16 1 2 0.01 0.01 demo 10 0
@@ -45,9 +45,9 @@ bash run_five.sh nell_v4 10 1 2 0.01 0.1 demo 10 0
 
 #################################### Ranking #############################
 cd code/Ranking
-bash run_five.sh WN18RR_v1 8 8 2 0.01 0.01 demo 10 0
-bash run_five.sh WN18RR_v2 8 8 2 0.01 0.01 demo 10 0
-bash run_five.sh WN18RR_v3 8 8 2 0.01 0.01 demo 10 0
+bash run_five.sh WN18RR_v1 8 8 2 0.01 0.01 demo 10 0 
+bash run_five.sh WN18RR_v2 8 8 2 0.01 0.01 demo 10 0 
+bash run_five.sh WN18RR_v3 8 8 2 0.01 0.01 demo 10 0 
 bash run_five.sh WN18RR_v4 8 8 2 0.01 0.01 demo 10 0
 
 bash run_five.sh fb237_v1 16 8 2 0.005 0.01 demo 10 0
