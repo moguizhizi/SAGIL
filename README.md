@@ -38,10 +38,10 @@ bash run_five.sh fb237_v2 16 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete
 bash run_five.sh fb237_v3 16 1 2 0.01 0.01 demo 10 0 False True 2 1 False complete_graph_chosen_k 4 relu normalize 0 16 0 16 gru
 bash run_five.sh fb237_v4 16 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 4 relu relu 0 16 0 32 sum
 
-bash run_five.sh nell_v1 10 1 2 0.01 0.01 demo 10 0
-bash run_five.sh nell_v2 10 1 2 0.01 0.01 demo 10 0
-bash run_five.sh nell_v3 10 1 2 0.01 0.01 demo 10 0
-bash run_five.sh nell_v4 10 1 2 0.01 0.1 demo 10 0
+bash run_five.sh nell_v1 10 1 2 0.01 0.01 demo 10 0 True True 0 0 True complete_graph_chosen_k 4 relu relu 0 16 0 32 sum
+bash run_five.sh nell_v2 10 1 2 0.01 0.01 demo 10 0 True True 0 0 True complete_graph_chosen_k 3 relu relu 0 32 0 32 sum
+bash run_five.sh nell_v3 10 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 4 relu relu 0 32 0 16 sum
+bash run_five.sh nell_v4 10 1 2 0.01 0.1 demo 10 0 True True 0 0 True complete_graph_chosen_k 5 relu relu 0 64 0 32 sum
 
 #################################### Ranking #############################
 cd code/Ranking
