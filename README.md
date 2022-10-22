@@ -33,10 +33,10 @@ bash run_five.sh WN18RR_v2 8 1 2 0.01 0.01 demo 10 0 True True 1 2 True complete
 bash run_five.sh WN18RR_v3 8 1 2 0.01 0.01 demo 10 0 True True 1 0 True complete_graph_chosen_k 3 relu relu 0 32 0 32 sum
 bash run_five.sh WN18RR_v4 8 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 3 relu relu 0 16 0 32 sum
 
-bash run_five.sh fb237_v1 16 1 2 0.01 0.01 demo 10 0
-bash run_five.sh fb237_v2 16 1 2 0.01 0.01 demo 10 0
-bash run_five.sh fb237_v3 16 1 2 0.01 0.01 demo 10 0
-bash run_five.sh fb237_v4 16 1 2 0.01 0.01 demo 10 0
+bash run_five.sh fb237_v1 16 1 2 0.01 0.01 demo 10 0 True True 1 0 False complete_graph_chosen_k 3 relu relu 0 16 0 32
+bash run_five.sh fb237_v2 16 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 4 relu relu 0 32 0 96 sum
+bash run_five.sh fb237_v3 16 1 2 0.01 0.01 demo 10 0 False True 2 1 False complete_graph_chosen_k 4 relu normalize 0 16 0 16 gru
+bash run_five.sh fb237_v4 16 1 2 0.01 0.01 demo 10 0 True True 1 1 True complete_graph_chosen_k 4 relu relu 0 16 0 32 sum
 
 bash run_five.sh nell_v1 10 1 2 0.01 0.01 demo 10 0
 bash run_five.sh nell_v2 10 1 2 0.01 0.01 demo 10 0
