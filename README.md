@@ -16,23 +16,12 @@ To test the code, run the following commands.
 
 ```shell script
 cd code/AUC-PR
-bash run_once.sh WN18RR_v1 8 1 2 0.01 0.01 demo_test 10 4
+bash run_once.sh WN18RR_v1 8 1 2 0.01 0.01 demo_test 10 4 False True 1 1 False complete_graph_chosen_k 3 relu normalize 0 16 0 16 sum
 ```
 
 Notice that, for the first time you run the code, it would take some time to sample the subgraph. 
 
 ## Reproduce the Results
-
-### Usage
-
-```
-bash {run_once.sh | run_five.sh} <dataset>  <gamma: margin in the loss function> \
-<negative_sample_size> <enclosing_subgraph_hop_number> <learning_rate> <weight_decay> \ 
-<experiment_id> <max_epoch> <gpu_id> 
-```
-
-- `{ | }`: Mutually exclusive items. Choose one from them.
-- `< >`: Placeholder for which you must supply a value.
 
 To reproduce the results, run the following commands. 
 
