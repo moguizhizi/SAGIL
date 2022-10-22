@@ -45,44 +45,14 @@ bash run_five.sh nell_v4 10 1 2 0.01 0.1 demo 10 0 True True 0 0 True complete_g
 
 #################################### Ranking #############################
 cd code/Ranking
-bash run_five.sh WN18RR_v1 8 8 2 0.01 0.01 demo 10 0 
-bash run_five.sh WN18RR_v2 8 8 2 0.01 0.01 demo 10 0 
-bash run_five.sh WN18RR_v3 8 8 2 0.01 0.01 demo 10 0 
-bash run_five.sh WN18RR_v4 8 8 2 0.01 0.01 demo 10 0
+bash run_five.sh WN18RR_v1 8 8 2 0.01 0.01 demo 10 0 True True 1 0 False complete_graph_chosen_k 3 relu relu
+bash run_five.sh WN18RR_v4 8 8 2 0.01 0.01 demo 10 0 True True 1 0 False complete_graph_chosen_k 3 relu relu
 
-bash run_five.sh fb237_v1 16 8 2 0.005 0.01 demo 10 0
-bash run_five.sh fb237_v2 16 8 2 0.005 0.01 demo 10 0
-bash run_five.sh fb237_v3 16 8 2 0.005 0.01 demo 10 0
-bash run_five.sh fb237_v4 16 8 2 0.005 0.01 demo 10 0
+bash run_five.sh fb237_v1 16 8 2 0.005 0.01 demo 10 0 False True 1 1 False complete_graph_chosen_k 3 relu relu 0 16 0 32 sum
+bash run_five.sh fb237_v4 16 8 2 0.005 0.01 demo 10 0 True True 0 0 True complete_graph_chosen_k 3 relu relu 16 32
 
-bash run_five.sh nell_v1 10 8 2 0.01 0.01 demo 10 0
-bash run_five.sh nell_v2 10 8 2 0.01 0.01 demo 10 0
-bash run_five.sh nell_v3 10 8 2 0.01 0.01 demo 10 0
-bash run_five.sh nell_v4 16 8 2 0.008 0.01 demo 5 0
-```
-
-**Remark**:  We run each experiment five times and report the mean results.
-
-## Citation
-If you find this code useful, please consider citing the following paper.
-```shell script
-@article{DBLP:journals/corr/abs-2103-03642,
-  author    = {Jiajun Chen and
-               Huarui He and
-               Feng Wu and
-               Jie Wang},
-  title     = {Topology-Aware Correlations Between Relations for Inductive Link Prediction
-               in Knowledge Graphs},
-  journal   = {CoRR},
-  volume    = {abs/2103.03642},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2103.03642},
-  archivePrefix = {arXiv},
-  eprint    = {2103.03642},
-  timestamp = {Mon, 15 Mar 2021 17:30:55 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2103-03642.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
+bash run_five.sh nell_v1 10 8 2 0.01 0.01 demo 10 0 True True 0 0 True complete_graph_chosen_k 3 relu relu
+bash run_five.sh nell_v4 16 8 2 0.008 0.01 demo 5 0 True True 0 0 False complete_graph_chosen_k 3 relu relu 0 128 0 32 sum
 ```
 
 ## Acknowledgement
